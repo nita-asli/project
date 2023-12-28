@@ -98,3 +98,20 @@ a:hover {
     color: #008080; /* Hijau Tosca */
     margin-right: 8px;
 }
+
+/* Footer */
+footer {
+    background-color: #00a8a8; /* Hijau Tosca yang lebih terang */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Gaya tambahan untuk mengatur footer agar tetap di bawah */
+main {
+    margin-bottom: 60px; /* Sesuaikan dengan tinggi footer */
+}
+
