@@ -88,6 +88,12 @@ def login():
 
 @app.route('/quiz', methods=['GET', 'POST'])
 def quiz():
+    if request.method == 'POST':
+        # Logika untuk memproses jawaban kuis
+        pass
+    # Logika untuk mengambil pertanyaan kuis dan menampilkan formulir
+    questions = get_quiz_questions()
+    return render_template('quiz.html', questions=questions)
 
 @app.route('/leaderboard')
 def leaderboard():

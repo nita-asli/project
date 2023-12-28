@@ -1,0 +1,100 @@
+/* File: static/styles.css */
+
+/* Gaya Dasar */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #008080; /* Hijau Tosca */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Navigasi */
+nav {
+    background-color: #00a8a8; /* Hijau Tosca yang lebih terang */
+    padding: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    margin-right: 20px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #004d4d; /* Hijau Tosca yang lebih gelap */
+}
+
+/* Dashboard Container */
+.dashboard {
+    background-color: #e0f2f1; /* Warna dasar untuk area dashboard */
+    padding: 20px;
+}
+
+/* Card Styles */
+.card {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    color: #008080; /* Hijau Tosca */
+}
+
+/* Action Button */
+.button {
+    background-color: #00a8a8; /* Hijau Tosca yang lebih terang */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #007a7a; /* Hijau Tosca yang lebih gelap */
+}
+
+/* Success and Error Alerts */
+.success {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.error {
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Icon Pohon */
+.tree-icon {
+    font-size: 24px;
+    color: #008080; /* Hijau Tosca */
+    margin-right: 8px;
+}
