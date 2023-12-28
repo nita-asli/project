@@ -5,7 +5,7 @@ import requests
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///quiz.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SECRET_KEY'] = 'your_secret_key'  # Ganti dengan kunci yang aman
+app.config['SECRET_KEY'] = 'f4cc586c92828a0569cab7c398abdc74'  
 
 db = SQLAlchemy(app)
 
@@ -88,8 +88,6 @@ def login():
 
 @app.route('/quiz', methods=['GET', 'POST'])
 def quiz():
-    # Implementasi halaman kuis
-    # ...
 
 @app.route('/leaderboard')
 def leaderboard():
