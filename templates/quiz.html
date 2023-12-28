@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - AI Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('quiz') }}">Quiz</a></li>
+                <li><a href="{{ url_for('leaderboard') }}">Leaderboard</a></li>
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>AI Quiz</h1>
+        <p>Answer the following questions:</p>
+
+        <!-- Form untuk pertanyaan dan jawaban -->
+        <form method="POST" action="{{ url_for('process_answer') }}">
+            {% for question in quiz_questions %}
+                <h2>{{ question.title }}</h2>
+                {% for option in question.options %}
+                    <input type="radio" name="{{ question.id }}" value="{{ option }}">
+                    {{ option }}<br>
+                {% endfor %}
+                <br>
+            {% endfor %}
+            <button type="submit">Submit Answers</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Developed by Your Name</p>
+    </footer>
+</body>
+</html>

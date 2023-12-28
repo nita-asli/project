@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - AI Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('register') }}">Register</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <!-- Add more menu items as needed -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Login</h1>
+        <form method="POST" action="{{ url_for('login') }}">
+            {{ form.hidden_tag() }}
+            <label for="username">Username:</label>
+            {{ form.username(class="form-control", placeholder="Enter your username") }}
+            {{ form.username.errors }}
+            
+            <label for="password">Password:</label>
+            {{ form.password(class="form-control", placeholder="Enter your password") }}
+            {{ form.password.errors }}
+            
+            <button type="submit">Login</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Developed by Your Name</p>
+    </footer>
+</body>
+</html>
